@@ -1,12 +1,14 @@
 function [A_hat,E_hat,iter] = inexact_alm_rpca(D, lambda, tol, maxIter)
 
-% Oct 2009
+%参见论文“The Augmented Lagrange Multiplier Method for Exact Recovery of Corrupted Low-Rank Matrics”
+%里面的Algorithm 5.
+%Oct 2009
 % This matlab code implements the inexact augmented Lagrange multiplier 
 % method for Robust PCA.
 %
 % D - m x n matrix of observations/data (required input)
 %
-% lambda - weight on sparse error term in the cost function
+% lambda - weight on sparse error term in the cost function;代价函数中稀疏项的权重，越大，结果越稀疏。
 %
 % tol - tolerance for stopping criterion.
 %     - DEFAULT 1e-7 if omitted or -1.
