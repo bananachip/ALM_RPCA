@@ -1,0 +1,3 @@
+cpd算法：实现的包括2D和3D的仿射：
+运行cpd_affine_example1进行affine2D配准
+运行cpd_affine_example进行affine3D配准
